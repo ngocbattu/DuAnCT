@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acitvity.ChucNangFloataddActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/float_close"
+            app:menu="@menu/item_menu_chuc_nang_add"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/bottom_navigation_close"
+            />
+        <TextView
+            android:id="@+id/txt_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#38316B"
+            android:text="Public"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintStart_toEndOf="@+id/bottom_navigation_close"
+            app:layout_constraintBottom_toTopOf="@+id/float_close"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="22dp"
+            android:src="@drawable/icon_tat_bat"
+            app:layout_constraintBottom_toTopOf="@+id/float_close"
+            app:layout_constraintStart_toEndOf="@+id/txt_public"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/float_close"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

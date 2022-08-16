@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/drawable/cuttom_back_groud.xml" value="0.1785" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/drawable/cuttom_back_groud_proflie.xml" value="0.1785" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/drawable/cuttom_recy_home.xml" value="0.1785" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/drawable/cuutom_follow.xml" value="0.1785" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/activity_chuc_nang_floatadd.xml" value="0.25" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/activity_favourites.xml" value="0.22" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/activity_photos.xml" value="0.22" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/activity_trang_chu.xml" value="0.17074275362318841" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/fragment_calendar.xml" value="0.17074275362318841" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/fragment_discover.xml" value="0.25" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/item_recy_calendra.xml" value="0.25" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/item_recy_discover.xml" value="0.1" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/item_recy_photos.xml" value="0.17074275362318841" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/layout/item_recy_proflie.xml" value="0.21" />
+        <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/menu/item_menu_chuc_nang_add.xml" value="0.20416666666666666" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuttom_back_fruod.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuttom_back_groud.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuttom_fb.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuttom_float_button.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuttom_gg.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuttom_linegradent.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuttom_recy_home.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuutom_bottom_adapter.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/cuutom_edit_text.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/ic_ca_nhan.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/drawable/ic_home.xml" value="0.128" />
+        <entry key="..\:/TestCongTy/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/TestCongTy/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/TestCongTy/app/src/main/res/layout/activity_trang_chu.xml" value="0.22" />
+        <entry key="..\:/TestCongTy/app/src/main/res/layout/fragment_calendar.xml" value="0.25" />
+        <entry key="..\:/TestCongTy/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/TestCongTy/app/src/main/res/layout/item_photo.xml" value="0.17074275362318841" />
+        <entry key="..\:/TestCongTy/app/src/main/res/layout/item_recy_view_ngay_lam_viec.xml" value="0.22" />
+        <entry key="..\:/TestCongTy/app/src/main/res/menu/item_bottom_navigation.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

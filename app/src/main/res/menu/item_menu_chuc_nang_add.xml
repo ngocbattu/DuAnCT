@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_close_calendra" android:icon="@drawable/calendra"
+        tools:ignore="MenuTitle" />
+    <item android:id="@+id/item_map" android:icon="@drawable/mymap"
+        tools:ignore="MenuTitle" />
+    <item android:id="@+id/item_photo" android:icon="@drawable/ic_photo"
+        tools:ignore="MenuTitle" />
+</menu>
