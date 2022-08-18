@@ -32,6 +32,7 @@ import vidu.demo.myapplication.Acitvity.DraftsActivity;
 import vidu.demo.myapplication.Acitvity.FavouritesActivity;
 import vidu.demo.myapplication.Acitvity.GoogleMapActivity;
 import vidu.demo.myapplication.Acitvity.PhotosActivity;
+import vidu.demo.myapplication.Acitvity.StaticsActivity;
 import vidu.demo.myapplication.Adapter.AdapterIconProfile;
 import vidu.demo.myapplication.Adapter.ImageConverter;
 import vidu.demo.myapplication.InterFace.ItemClick;
@@ -110,6 +111,7 @@ public class ProfileFragment extends Fragment {
 
             @Override
             public void CickStatics() {
+                startActivity(new Intent(getActivity(), StaticsActivity.class));
                 Toast.makeText (getActivity (), "CickStatics", Toast.LENGTH_SHORT).show ();
             }
         });

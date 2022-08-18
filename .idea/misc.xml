@@ -4,16 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/drawable/cuttom_chuc_nang_add.xml" value="0.1425" />
+        <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/drawable/cuttom_search_view.xml" value="0.1425" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/drawable/ic_close.xml" value="0.1425" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/activity_chuc_nang_floatadd.xml" value="0.33" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/activity_drafts.xml" value="0.2916666666666667" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/activity_favourites.xml" value="0.2" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/activity_google_map.xml" value="0.15555555555555556" />
+        <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/activity_janactivity.xml" value="0.22" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/activity_statics.xml" value="0.22" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/fragment_blank.xml" value="0.15555555555555556" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/fragment_calendar_add.xml" value="0.1258741258741259" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/fragment_googlemap_add.xml" value="0.15555555555555556" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/fragment_profile.xml" value="0.28396739130434784" />
+        <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/item_recy_add_photo.xml" value="0.15555555555555556" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/layout/item_recy_calendra.xml" value="0.15555555555555556" />
         <entry key="..\:/AndroidProject/AppTest/DuAnCT/app/src/main/res/menu/item_menu_chuc_nang_add.xml" value="0.15555555555555556" />
         <entry key="..\:/DuAnCongTy/DuAnCongTy/app/src/main/res/drawable/cuttom_back_groud.xml" value="0.1785" />

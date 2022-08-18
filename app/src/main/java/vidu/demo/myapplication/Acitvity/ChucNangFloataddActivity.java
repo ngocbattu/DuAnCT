@@ -23,7 +23,7 @@ public class ChucNangFloataddActivity extends AppCompatActivity {
     AdapterChuNangAdd adapterChuNangAdd;
     ViewPager2 mViewPager2;
     ConstraintLayout constraintLayout;
-    BottomNavigationView bottomNavigationView;
+    ImageView image_calendar , image_map , image_photo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
@@ -39,22 +39,25 @@ public class ChucNangFloataddActivity extends AppCompatActivity {
         mViewPager2.setAdapter(adapterChuNangAdd);
         constraintLayout.setVisibility(View.GONE);
 
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        image_calendar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.item_close_calendra:
-                        mViewPager2.setCurrentItem(0);
-                        constraintLayout.setVisibility(View.VISIBLE);
-                        break;
-                    case R.id.item_close_map:
-                        mViewPager2.setCurrentItem(1);
-                        break;
-                    case R.id.item_close_photo:
-                        mViewPager2.setCurrentItem(2);
-                        break;
-                }
-                return true;
+            public void onClick(View view) {
+                mViewPager2.setCurrentItem(0);
+                constraintLayout.setVisibility(View.VISIBLE);
+            }
+        });
+        image_map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mViewPager2.setCurrentItem(1);
+                constraintLayout.setVisibility(View.VISIBLE);
+            }
+        });
+        image_photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mViewPager2.setCurrentItem(2);
+                constraintLayout.setVisibility(View.VISIBLE);
             }
         });
 
@@ -63,6 +66,8 @@ public class ChucNangFloataddActivity extends AppCompatActivity {
         mViewPager2 = findViewById(R.id.viewpage_chuc_nang_add);
         floatingActionButton = findViewById (R.id.float_close);
         constraintLayout = findViewById(R.id.contrain12);
-        bottomNavigationView = findViewById(R.id.bottom_navigation_close);
+        image_calendar = findViewById(R.id.image_calendar_add);
+        image_map = findViewById(R.id.image_map_add);
+        image_photo = findViewById(R.id.image_photo_add);
     }
 }
