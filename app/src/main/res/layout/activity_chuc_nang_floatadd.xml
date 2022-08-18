@@ -4,12 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Acitvity.ChucNangFloataddActivity">
+    tools:context=".Acitvity.ChucNangFloataddActivity"
+    android:background="#EAE5E5">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toTopOf="@+id/contrain11"
+        android:background="@drawable/cuttom_chuc_nang_add"
+        android:id="@+id/contrain12"
+        >
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpage_chuc_nang_add"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/contrain11"
+        android:background="@color/white"
         >
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="260dp"
@@ -28,7 +47,7 @@
             android:textColor="#38316B"
             android:text="Public"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="20dp"
             app:layout_constraintStart_toEndOf="@+id/bottom_navigation_close"
             app:layout_constraintBottom_toTopOf="@+id/float_close"/>
         <ImageView

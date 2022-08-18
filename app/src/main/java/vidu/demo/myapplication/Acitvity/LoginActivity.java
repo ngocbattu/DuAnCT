@@ -60,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
     LoginButton btn_login;
     SignInButton signInButton;
     TextView txt_login;
+    GoogleSignInClient mGoogleSignInClient;
 
 
     @Override
@@ -100,6 +101,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         Login ();
+        ResetGG();
 
     }
 
@@ -136,6 +138,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_login = findViewById (R.id.login_button);
         signInButton =  findViewById (R.id.sign_in_button);
         txt_login = findViewById (R.id.txt_login);
+
     }
 
     @Override
@@ -151,7 +154,34 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 100) {
+            // The Task returned from this call is always completed, no need to attach
+            // a listener.
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            handleSignInResult(task);
+        }
 
+    }
+
+    private void handleSignInResult(Task<GoogleSignInAccount> task) {
+        try {
+            GoogleSignInAccount account = task.getResult(ApiException.class);
+            GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+            if (acct != null) {
+                String personName = acct.getDisplayName();
+                String personGivenName = acct.getGivenName();
+                String personFamilyName = acct.getFamilyName();
+                String personEmail = acct.getEmail();
+                String personId = acct.getId();
+                Uri personPhoto = acct.getPhotoUrl();
+            }
+            startActivity(new Intent(LoginActivity.this,TrangChuActivity.class));
+            // Signed in successfully, show authenticated UI.
+        } catch (ApiException e) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.w("TAG", "signInResult:failed code=" + e.getStatusCode());
+        }
     }
 
     public void Login(){
@@ -161,6 +191,30 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity (new Intent (LoginActivity.this,TrangChuActivity.class));
             }
         });
+    }
+    public void ResetGG(){
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        signInButton.setSize(SignInButton.SIZE_STANDARD);
+        signInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.sign_in_button:
+                        signIn();
+                        break;
+
+                }
+            }
+        });
+    }
+
+    private void signIn() {
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, 100);
     }
 
 }

@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/item_close_calendra" android:icon="@drawable/calendra"
         tools:ignore="MenuTitle" />
-    <item android:id="@+id/item_map" android:icon="@drawable/mymap"
+    <item android:id="@+id/item_close_map" android:icon="@drawable/mymap"
         tools:ignore="MenuTitle" />
-    <item android:id="@+id/item_photo" android:icon="@drawable/ic_photo"
+    <item android:id="@+id/item_close_photo" android:icon="@drawable/ic_photo"
         tools:ignore="MenuTitle" />
 </menu>

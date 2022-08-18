@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Acitvity.GoogleMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Acitvity.DraftsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Acitvity.ChucNangFloataddActivity"
             android:exported="false" />
         <activity
@@ -48,6 +54,9 @@
         <meta-data
             android:name="com.facebook.sdk.ClientToken"
             android:value="@string/facebook_client_token" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDaFSfZUlBNdI2Lwz0-9uaJ2_ZMNism4_A" />
     </application>
 
 </manifest>

@@ -3,67 +3,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="343dp"
         android:layout_height="70dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cuttom_recy_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/cuttom_recy_home"
+        app:layout_constraintTop_toTopOf="parent">
 
-         >
         <TextView
+            android:id="@+id/txt_so_ngay_calendra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="12dp"
             android:text="03"
-            android:textStyle="bold"
             android:textColor="#82A0FA"
             android:textSize="28dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            android:id="@+id/txt_so_ngay_calendra"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="21dp"
-            />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:text="JAN"
-                android:textColor="#82A0FA"
-                app:layout_constraintTop_toBottomOf="@+id/txt_so_ngay_calendra"
-                app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/txt_thang_calendra"
-                android:layout_marginLeft="22dp"
-                 />
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:layout_marginLeft="74dp"
-            android:layout_marginTop="19dp"
+            android:id="@+id/txt_thang_calendra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:text="JAN"
+            android:textColor="#82A0FA"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_so_ngay_calendra" />
+
+        <TextView
+            android:id="@+id/txt_trang_thai_calendra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="19dp"
             android:text="A slow but sure start."
-            app:layout_constraintStart_toEndOf="@+id/txt_so_ngay_calendra"
-            app:layout_constraintTop_toTopOf="parent"
             android:textColor="#666666"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:id="@+id/txt_trang_thai_calendra"
-            />
+            app:layout_constraintStart_toEndOf="@+id/txt_so_ngay_calendra"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
+            android:id="@+id/txt_ngay_gio_calendra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday, 11:30 AM"
-            android:id="@+id/txt_ngay_gio_calendra"
-            app:layout_constraintStart_toEndOf="@+id/txt_thang_calendra"
-            app:layout_constraintTop_toBottomOf="@+id/txt_trang_thai_calendra"
-            android:textStyle="bold"
-            android:textSize="12sp"
-            android:textColor="#999999"
             android:layout_marginLeft="79dp"
-            />
+            android:text="Tuesday, 11:30 AM"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/txt_thang_calendra"
+            app:layout_constraintTop_toBottomOf="@+id/txt_trang_thai_calendra" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
